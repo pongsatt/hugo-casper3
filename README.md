@@ -1,3 +1,6 @@
+## Modification from original
+- Support Google Analitics
+
 ## Demo
 
 A demo with feature images is available in the repository [jonathanjanssens/hugo-casper3-demo](https://github.com/jonathanjanssens/hugo-casper3-demo).
