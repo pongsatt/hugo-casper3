@@ -14,9 +14,10 @@
             <header class="post-full-header">
 
                 {{ with .Params.tags }}
-                    {{ $primaryTag := (index . 0) }}
                     <section class="post-full-tags">
-                        <a href="{{ "/tags/" | relLangURL }}{{ $primaryTag | urlize }}">{{ $primaryTag }}</a>
+                        {{ range . }}
+                            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>&nbsp;&nbsp;&nbsp;
+                        {{ end }}
                     </section>
                 {{ end }}
 
