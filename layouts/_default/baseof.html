@@ -17,6 +17,9 @@
     <!-- Google Analytics -->
 	{{ template "_internal/google_analytics_async.html" . }}
 
+    <!-- Google Adsense -->
+    {{- partial "adsense-auto.html" $ -}}
+
 </head>
 <body class="{{ block "body_class" . }} {{ end }}">
 
