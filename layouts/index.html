@@ -19,6 +19,10 @@
 </header>
 
 <main id="site-main" class="site-main outer">
+    {{ if .Site.Params.Adsense.index }}
+        <!-- Google Adsense -->
+        {{- partial "adsense-unit.html" $ -}}
+    {{ end }}
     <div class="inner posts">
         <div class="post-feed">
             {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
