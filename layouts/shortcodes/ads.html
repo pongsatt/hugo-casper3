@@ -1,0 +1,11 @@
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{.Site.Params.Adsense.client}}"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     {{ if .Site.Params.Adsense.inArticleLayout }}data-ad-layout="in-article"{{ end }}
+     data-ad-format="fluid"
+     data-ad-client="{{.Site.Params.Adsense.client}}"
+     {{ with or (.Site.Params.Adsense.inArticleUnitId) (.Site.Params.Adsense.unitId) }} data-ad-slot="{{ . }}"{{ end }}></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
