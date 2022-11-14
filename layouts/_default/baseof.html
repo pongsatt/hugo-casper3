@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>
+    {{ if .Site.Params.GA4.enabled }}
+        <!-- Google Analytics 4 -->
+        {{- partial "ga4.html" $ -}}
+    {{ end }}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
